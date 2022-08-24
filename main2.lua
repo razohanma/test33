@@ -1,7 +1,12 @@
-# local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "RazoHubV1", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+-- made by razohan#6069     *    i remake this script
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Razo(remake)V1", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+
+
 local Tab = Window:MakeTab({
-Name = "Characters",
+Name = "Karakterler-Character",
 Icon = "rbxassetid://460729824",
 PremiumOnly = false
 })
@@ -37,3 +42,12 @@ Tab:AddButton({
         changeplayer(game:GetService("ReplicatedStorage").SelectCharacter.Wanda)
     end
 })
+
+local Tab = Window:MakeTab({
+    Name = "Misc",
+    Icon = "rbxassetid://460729824",
+    PremiumOnly = false
+    })
+
+    Tab:AddParagraph("Scripter&Editor","Razohan")
+
